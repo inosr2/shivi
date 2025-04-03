@@ -77,7 +77,7 @@
     left: 50%;
     transform: translateX(-50%); /* Center horizontally */
     z-index: 1000;
-    display: none;
+    display: none; /* Initially hidden */
 }
 
 
