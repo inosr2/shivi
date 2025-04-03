@@ -82,3 +82,27 @@ papers.forEach(paper => {
   const p = new Paper();
   p.init(paper);
 });
+
+//music
+var bgMusicURL = './music/love.mp3'; // Link of background music
+var bgMusicControls = true; // Show UI music control
+let bgMusic = null;
+let isPlaying = false;
+const musicToggle = document.getElementById('music-toggle');
+const musicText = musicToggle.querySelector('.music-text');
+const bgMusicElement = document.getElementById('bgMusic');
+
+if (bgMusicURL) {
+    musicToggle.addEventListener('click', () => {
+        if (!isPlaying) {
+            bgMusicElement.play();
+            musicToggle.classList.add('playing');
+            musicText.textContent = 'Pause Music';
+        } else {
+            bgMusicElement.pause();
+            musicToggle.classList.remove('playing');
+            musicText.textContent = 'Play Music';
+        }
+        isPlaying = !isPlaying;
+    });
+}
