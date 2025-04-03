@@ -48,7 +48,7 @@ if (autoRotate) {
   ospin.style.animation = `${animationName} ${Math.abs(rotateSpeed)}s infinite linear`;
 }
 
-let bgMusic = "./music/love.mp3";
+let bgMusic = null;
 let isPlaying = true;
 const musicToggle = document.getElementById('music-toggle');
 const musicText = musicToggle.querySelector('.music-text');
