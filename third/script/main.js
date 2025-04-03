@@ -310,7 +310,7 @@ const animationTimeline = () => {
 fetchData();
 
 //music
-var bgMusicURL = './music/love.mp3'; // Link of background music
+var bgMusicURL = './music/love2.mp3'; // Link of background music
 var bgMusicControls = true; // Show UI music control
 let bgMusic = null;
 let isPlaying = false;
