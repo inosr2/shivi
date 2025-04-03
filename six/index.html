@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>shivi❤️</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Tap book to open</h2>
+    <div class="body">
+        <div class="birthdayCard" ontouchstart="this.classList.toggle('flipped')" onclick="this.classList.toggle('flipped')">
+            <div class="cardFront">
+                <h3 class="happy">Surprise book 📗</h3>
+                <div class="balloons">
+                    <div class="balloonOne">
+                        <img src="img/love.png" alt="love" height="100" width="100">
+                    </div>
+                    <div class="balloonTwo">
+                        <img src="img/love2.png" alt="love2" height="80" width="80">
+                    </div>
+                </div>
+            </div>
+            <div class="cardInside">
+                <h3 class="back">Surprise 😍</h3>
+                <img class="insideImg insideImg-contain" src="img/1.jpeg" alt="surprise" height="100" width="100">
+                <p id="touch-hint" style="display: none;" class="touch-hint">👆 Touch to rotate <span class="sparkle">✨</span></p>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Check if the device is Android
+        if (/Android/i.test(navigator.userAgent)) {
+            document.getElementById('touch-hint').style.display = 'block';
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
