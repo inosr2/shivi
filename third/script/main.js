@@ -308,3 +308,25 @@ const animationTimeline = () => {
 
 // Run fetch and animation in sequence
 fetchData();
+
+//music
+let bgMusic = null;
+let isPlaying = false;
+const musicToggle = document.getElementById('music-toggle');
+const musicText = musicToggle.querySelector('.music-text');
+const bgMusicElement = document.getElementById('bgMusic');
+
+if (bgMusicURL) {
+    musicToggle.addEventListener('click', () => {
+        if (!isPlaying) {
+            bgMusicElement.play();
+            musicToggle.classList.add('playing');
+            musicText.textContent = 'Pause Music';
+        } else {
+            bgMusicElement.pause();
+            musicToggle.classList.remove('playing');
+            musicText.textContent = 'Play Music';
+        }
+        isPlaying = !isPlaying;
+    });
+}
