@@ -5,6 +5,6 @@ document.addEventListener('DOMContentLoaded', function() {
         // Set timeout for 25 seconds (45000 milliseconds)
         setTimeout(function() {
             window.location.href = '/five/index.html';
-        }, 25000);
+        }, 12000);
     });
 });
