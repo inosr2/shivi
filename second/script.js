@@ -1,8 +1,8 @@
-var radius = 340; // how big of the radius
+var radius = 240; // how big of the radius
 var autoRotate = true; // auto rotate or not
 var rotateSpeed = -60; // unit: seconds/360 degrees
-var imgWidth = 300; // width of images (unit: px)
-var imgHeight = 550; // height of images (unit: px)
+var imgWidth = 120; // width of images (unit: px)
+var imgHeight = 270; // height of images (unit: px)
 // Link of background music - set 'null' if you dont want to play background music
 var bgMusicURL = 'output.mp3';
 var bgMusicControls = true; // Show UI music control
