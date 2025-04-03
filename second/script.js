@@ -49,7 +49,7 @@ if (autoRotate) {
 }
 
 let bgMusic = null;
-let isPlaying = true;
+let isPlaying = false;
 const musicToggle = document.getElementById('music-toggle');
 const musicText = musicToggle.querySelector('.music-text');
 const bgMusicElement = document.getElementById('bgMusic');
